@@ -6,8 +6,7 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-class MyMouse extends JFrame
-{
+class MyMouse extends JFrame {
     JPanel[] pnl = new JPanel[3];
 
     JButton btn1 = new JButton("AC Milan");
@@ -18,14 +17,12 @@ class MyMouse extends JFrame
 
     int milan = 0, madrid = 0;
 
-    public MyMouse()
-    {
+    public MyMouse() {
         super("AC Milan vs. Real Madrid");
-        setSize(400,400);
-        setLayout(new GridLayout(1,3));
+        setSize(400, 400);
+        setLayout(new GridLayout(1, 3));
 
-        for(int i = 0 ; i < pnl.length ; i++)
-        {
+        for (int i = 0; i < pnl.length; i++) {
             pnl[i] = new JPanel();
             add(pnl[i]);
         }
@@ -42,11 +39,11 @@ class MyMouse extends JFrame
         pnl[1].add(lbl3);
 
 
-        btn1.addMouseListener(new MouseListener()
-        {
-            public void mouseExited(MouseEvent a){}
-            public void mouseClicked(MouseEvent a)
-            {
+        btn1.addMouseListener(new MouseListener() {
+            public void mouseExited(MouseEvent a) {
+            }
+
+            public void mouseClicked(MouseEvent a) {
                 milan++;
                 lbl1.setText("Result: " + milan + " X " + madrid);
                 lbl2.setText("Last Scorer: AC Milan");
@@ -57,16 +54,22 @@ class MyMouse extends JFrame
                 else
                     lbl3.setText("Winner: DRAW");
             }
-            public void mouseEntered(MouseEvent a) {}
-            public void mouseReleased(MouseEvent a) {}
-            public void mousePressed(MouseEvent a) {}
+
+            public void mouseEntered(MouseEvent a) {
+            }
+
+            public void mouseReleased(MouseEvent a) {
+            }
+
+            public void mousePressed(MouseEvent a) {
+            }
         });
 
-        btn2.addMouseListener(new MouseListener()
-        {
-            public void mouseExited(MouseEvent a){}
-            public void mouseClicked(MouseEvent a)
-            {
+        btn2.addMouseListener(new MouseListener() {
+            public void mouseExited(MouseEvent a) {
+            }
+
+            public void mouseClicked(MouseEvent a) {
                 madrid++;
                 lbl1.setText("Result: " + milan + " X " + madrid);
                 lbl2.setText("Last Scorer: Real Madrid");
@@ -77,14 +80,19 @@ class MyMouse extends JFrame
                 else
                     lbl3.setText("Winner: DRAW");
             }
-            public void mouseEntered(MouseEvent a) {}
-            public void mouseReleased(MouseEvent a) {}
-            public void mousePressed(MouseEvent a) {}
+
+            public void mouseEntered(MouseEvent a) {
+            }
+
+            public void mouseReleased(MouseEvent a) {
+            }
+
+            public void mousePressed(MouseEvent a) {
+            }
         });
     }
 
-    public static void main(String[]args)
-    {
+    public static void main(String[] args) {
         new MyMouse().setVisible(true);
     }
 }
