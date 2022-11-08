@@ -8,7 +8,6 @@ import java.awt.event.MouseListener;
 
 class MyMouse extends JFrame {
     JPanel[] pnl = new JPanel[3];
-
     JButton btn1 = new JButton("AC Milan");
     JButton btn2 = new JButton("Real Madrid");
     JLabel lbl1 = new JLabel("Result: 0 X 0");
