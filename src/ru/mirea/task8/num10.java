@@ -11,6 +11,7 @@ public class num10 {
         else {
             return Rev(n / 10, 10 * a + n % 10);
         }
+
     }
     public static void main(String[] args){
         int a = 0;

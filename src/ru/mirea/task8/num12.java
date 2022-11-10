@@ -16,6 +16,7 @@ public class num12 {
         else {
             Rec();
         }
+
     }
 
     public static void main(String[] args){
